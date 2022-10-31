@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import logo from "../img/logo.png"
 
 const Nav = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           <img src={logo} alt="" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,24 +22,24 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
             <li className="nav-item ms-auto">
-              <a className="nav-link" href="#">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-auto">
-              <a className="nav-link" href="#">
+              <Link to="/people" className="nav-link">
                 People
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-auto">
-              <a className="nav-link" href="#">
+              <Link to="Paths" className="nav-link">
                 Paths
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-auto">
-              <a className="nav-link" href="#">
+              <Link to="/contact" className="nav-link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
